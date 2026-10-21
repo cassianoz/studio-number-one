@@ -1,0 +1,1774 @@
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    transition: 0.2s linear;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: whitesmoke;
+}
+
+.header section {
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar a {
+    margin: 0;
+    padding: 0.5rem 0;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    color: black;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.header .navbar a:hover {
+    transform: scale(1.06);
+}
+.navbar a {
+    margin: 0;
+    font-size: 1.8rem;
+    color: black;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.icones img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icones img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.home-container {
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h3 {
+    color: black;
+    font-size: 6rem;
+}
+
+.content p {
+    color: black;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.2;
+    padding: 1rem 0;
+}
+
+.title {
+    font-family: "Lora", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: none;
+}
+
+/* SOBRE NÓS */
+
+.about .container-image {
+    flex: 0 0 250px;
+    width: 250px;
+    max-width: 250px;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about .row .content {
+    flex: 0 1 600px;
+    padding: 0;
+    min-width: 0;
+}
+
+.about .row .content h3 {
+    font-family: "Lora", serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+    text-transform: none;
+}
+
+.about .row .content p {
+    font-family: "Lora", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row .content a {
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* IMAGENS DOS SERVIÇOS */
+
+.servicos .box-container .box img {
+    width: 70%;
+    max-width: 70%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+/* CARDS DOS SERVIÇOS */
+
+.servicos .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    height: auto;
+    cursor: pointer;
+}
+
+.servicos .box-container .box:hover {
+    background-color: black;
+}
+
+.servicos .box-container .box:hover > * {
+    color: white;
+}
+
+/* GRADE DOS SERVIÇOS */
+
+.servicos .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* NOMES DOS SERVIÇOS */
+
+.servicos .box-container .box h3 {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.3rem 0;
+    margin: 0;
+    text-transform: none;
+}
+
+/* TEXTO "A PARTIR DE" */
+
+.servicos .box-container .box > a:not(.btn) {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* PREÇOS */
+
+.servicos .box-container .box .preco {
+    font-size: 2.5rem;
+    padding: 0.3rem 0;
+    margin: 0;
+}
+
+/* BOTÃO DOS SERVIÇOS */
+
+.servicos .box-container .box .btn {
+    background-color: black;
+    color: white;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+.servicos .box-container .box:hover .btn {
+    background-color: white;
+    color: black;
+}
+.servicos .box-container .aviso-outros-servicos {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 2rem 0 0;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.servicos .box-container .aviso-outros-servicos p {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* =========================================
+   STUDIO NUMBER ONE — NOSSAS PROFISSIONAIS
+========================================= */
+
+#profissionais,
+.profissionais {
+    width: 100%;
+    max-width: none;
+    padding: 70px 4% 80px;
+    box-sizing: border-box;
+    background: #f7f4ef;
+    color: #111;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* TÍTULO E INTRODUÇÃO */
+
+#profissionais > .title {
+    font-family: "Lora", serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    text-transform: none;
+}
+
+/* CARROSSEL */
+
+#profissionais .carrossel-profissionais {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 65px;
+    box-sizing: border-box;
+}
+
+#profissionais .palco-profissionais {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* TRILHO CRIADO PELO JAVASCRIPT */
+
+#profissionais .trilho-profissionais {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    will-change: transform;
+    transition: transform 0.55s ease-in-out;
+}
+
+/* CARDS DAS PROFISSIONAIS */
+
+#profissionais .card-profissional {
+    display: flex;
+    flex: 0 0 calc((100% - 40px) / 3);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 25px 20px 30px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+    opacity: 0.58;
+    filter: blur(1px);
+    transform: scale(0.94);
+    transition:
+        opacity 0.45s ease,
+        filter 0.45s ease,
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+#profissionais .card-profissional.ativo {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* FOTOS */
+
+#profissionais .foto-profissional {
+    display: block;
+    width: clamp(120px, 15vw, 210px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+/* INFORMAÇÕES */
+
+#profissionais .info-profissional {
+    width: 100%;
+    text-align: center;
+}
+
+#profissionais .card-profissional h3 {
+    font-family: "Lora", serif;
+    font-size: clamp(2.2rem, 2.5vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 0 10px;
+    text-transform: none;
+}
+
+/* ESPECIALIDADES */
+
+#profissionais .especialidade {
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-transform: none;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#profissionais .especialidade::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 1px;
+    background: #aaa;
+    margin: 13px auto;
+}
+
+/* DESCRIÇÕES */
+
+#profissionais .card-profissional p {
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.65;
+    text-align: center;
+    margin: 0 0 22px;
+}
+
+/* BOTÕES */
+
+#profissionais .card-profissional .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+    min-height: 52px;
+    box-sizing: border-box;
+    margin-top: auto;
+    padding: 14px 12px;
+    background: #080808;
+    color: #fff;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    font-family: "Lora", serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+}
+
+#profissionais .card-profissional .btn:hover {
+    background: #f7f4ef;
+    color: #111;
+}
+
+/* SETAS */
+
+#profissionais .seta-profissional {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+#profissionais .seta-profissional.anterior {
+    left: 0;
+}
+
+#profissionais .seta-profissional.proxima {
+    right: 0;
+}
+
+/* TABLETS — PROFISSIONAIS */
+
+@media (max-width: 900px) {
+    #profissionais {
+        padding: 55px 20px 65px;
+    }
+
+    #profissionais .carrossel-profissionais {
+        padding: 0 45px;
+    }
+
+    #profissionais .trilho-profissionais {
+        gap: 12px;
+    }
+
+    #profissionais .card-profissional {
+        flex-basis: calc((100% - 24px) / 3);
+        padding: 22px 12px;
+    }
+
+    #profissionais .card-profissional h3 {
+        font-size: 2.4rem;
+    }
+
+    #profissionais .card-profissional p {
+        font-size: 1.35rem;
+    }
+
+    #profissionais .foto-profissional {
+        width: 145px;
+    }
+}
+
+/* CELULARES — PROFISSIONAIS */
+
+@media (max-width: 600px) {
+    #profissionais {
+        padding: 45px 15px 55px;
+    }
+
+    #profissionais > .title {
+        font-size: 3.6rem;
+    }
+
+    #profissionais .carrossel-profissionais {
+        padding: 0 30px;
+    }
+
+    #profissionais .trilho-profissionais {
+        gap: 12px;
+    }
+
+    #profissionais .card-profissional {
+        flex-basis: 100%;
+        padding: 25px 18px;
+        opacity: 0.65;
+        filter: blur(0.5px);
+        transform: scale(0.96);
+    }
+
+    #profissionais .card-profissional.ativo {
+        opacity: 1;
+        filter: none;
+        transform: scale(1);
+    }
+
+    #profissionais .foto-profissional {
+        width: 180px;
+    }
+
+    #profissionais .card-profissional h3 {
+        font-size: 2.8rem;
+    }
+
+    #profissionais .especialidade {
+        font-size: 1.45rem;
+        letter-spacing: 0.3px;
+    }
+
+    #profissionais .card-profissional p {
+        font-size: 1.5rem;
+    }
+
+    #profissionais .seta-profissional {
+        width: 36px;
+        height: 36px;
+        font-size: 2rem;
+    }
+}
+
+/* =========================================
+   AVALIAÇÕES DOS CLIENTES
+========================================= */
+
+.avaliacoes {
+    font-family: "Lora", serif;
+    background: whitesmoke;
+    color: #171717;
+}
+
+.avaliacoes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO DAS AVALIAÇÕES */
+
+.cabecalho-avaliacoes {
+    font-family: "Lora", serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 6.5rem;
+}
+
+.subtitulo-avaliacoes,
+.assinatura-studio {
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.65rem;
+    margin-bottom: 2.5rem;
+}
+
+/* TÍTULO PADRONIZADO COM SOBRE NÓS */
+
+.cabecalho-avaliacoes h2 {
+    font-family: "Lora", serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #171717;
+    text-align: center;
+    text-transform: none;
+}
+
+/* TEXTO DESCRITIVO */
+
+.cabecalho-avaliacoes p {
+    font-family: "Lora", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #171717;
+    text-transform: none;
+}
+
+/* LINHA DECORATIVA, CASO UTILIZADA */
+
+.linha-decorativa {
+    display: block;
+    width: 9rem;
+    height: 1px;
+    background: #171717;
+    margin: 0 auto 2.5rem;
+}
+
+/* CARROSSEL DE AVALIAÇÕES */
+
+.carrossel-avaliacoes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.janela-avaliacoes {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.lista-avaliacoes {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+}
+
+/* CARTÕES */
+
+.cartao-avaliacao {
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - 4rem) / 3);
+    min-width: 0;
+    background: white;
+    border: 1px solid #dedede;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+/* CABEÇALHO DE CADA AVALIAÇÃO */
+
+.topo-avaliacao {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.avatar-avaliacao {
+    width: 4.8rem;
+    height: 4.8rem;
+    min-width: 4.8rem;
+    border-radius: 50%;
+    background: #555;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lora", serif;
+    font-size: 2rem;
+}
+
+.dados-avaliacao {
+    min-width: 0;
+    flex: 1;
+}
+
+/* NOMES DOS CLIENTES */
+
+.dados-avaliacao h3 {
+    font-family: "Lora", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #171717;
+    overflow-wrap: anywhere;
+    text-transform: none;
+}
+
+/* INFORMAÇÕES ABAIXO DOS NOMES */
+
+.dados-avaliacao span {
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 0.4rem;
+}
+
+/* LETRA G DO GOOGLE */
+
+.google-g {
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: conic-gradient(
+        from -45deg,
+        #4285f4 0deg 90deg,
+        #34a853 90deg 180deg,
+        #fbbc05 180deg 250deg,
+        #ea4335 250deg 310deg,
+        #4285f4 310deg 360deg
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* ESTRELAS DO CARTÃO */
+
+.estrelas-avaliacao {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.8rem;
+    color: #171717;
+}
+
+/* TEXTO DAS AVALIAÇÕES — MESMA BASE DE SOBRE NÓS */
+
+.cartao-avaliacao p {
+    font-family: "Lora", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #383838;
+    text-transform: none;
+}
+
+/* SETAS DO CARROSSEL */
+
+.seta-avaliacao {
+    flex-shrink: 0;
+    cursor: pointer;
+    background: transparent;
+    color: #171717;
+    border: 1px solid #171717;
+    border-radius: 50%;
+    width: 4.4rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+}
+
+/* PONTOS DO CARROSSEL */
+
+.pontos-avaliacoes {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    margin: 3rem 0 8rem;
+}
+
+.ponto-avaliacao {
+    width: 0.8rem;
+    height: 0.8rem;
+    padding: 0;
+    border-radius: 50%;
+    background: #c4c0ba;
+    cursor: pointer;
+}
+
+.ponto-avaliacao.ativo {
+    background: #171717;
+}
+
+/* RESUMO DA NOTA DO GOOGLE */
+
+.resumo-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.google-g-grande {
+    font-size: 5rem;
+}
+
+.nota-linha {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.numero-nota {
+    font-size: 3.5rem;
+}
+
+.estrelas-google {
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.nota-google p {
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    text-transform: none;
+}
+
+/* ASSINATURA DO STUDIO */
+
+.assinatura-studio {
+    font-family: "Lora", serif;
+    text-align: center;
+    margin: 3.5rem 0;
+}
+
+/* BOTÃO AVALIAR NO GOOGLE */
+
+.botao-google {
+    max-width: 35rem;
+    width: 100%;
+    min-height: 6.3rem;
+    box-sizing: border-box;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem auto 0;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-radius: 0.4rem;
+    font-family: "Lora", serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.botao-google .google-g {
+    color: #fff;
+    background: none;
+    -webkit-text-fill-color: #fff;
+}
+
+.separador-botao {
+    height: 3rem;
+    width: 1px;
+    background: #777;
+}
+
+.seta-botao {
+    font-size: 2.5rem;
+}
+
+/* =========================================
+   RESPONSIVIDADE DAS AVALIAÇÕES
+========================================= */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .avaliacoes {
+        padding: 7rem 2rem;
+    }
+
+    .lista-avaliacoes {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .cartao-avaliacao {
+        flex: 0 0 calc((100% - 2rem) / 2);
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .carrossel-avaliacoes {
+        gap: 1rem;
+    }
+
+    .seta-avaliacao {
+        width: 3.6rem;
+        height: 3.6rem;
+        min-width: 3.6rem;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .avaliacoes {
+        padding: 5rem 1.5rem;
+    }
+
+    .cabecalho-avaliacoes {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    /* MESMO TAMANHO NO COMPUTADOR E NO CELULAR */
+
+    .cabecalho-avaliacoes h2 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .cabecalho-avaliacoes p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .cabecalho-avaliacoes p br {
+        display: none;
+    }
+
+    .lista-avaliacoes {
+        display: flex;
+        gap: 0;
+    }
+
+    .cartao-avaliacao {
+        flex: 0 0 100%;
+        min-width: 0;
+        min-height: auto;
+        box-sizing: border-box;
+    }
+
+    /* TEXTO DAS AVALIAÇÕES NO CELULAR */
+
+    .cartao-avaliacao p {
+        font-family: "Lora", serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .carrossel-avaliacoes {
+        gap: 0.8rem;
+    }
+
+    .seta-avaliacao {
+        width: 3rem;
+        height: 3rem;
+        min-width: 3rem;
+        font-size: 2.4rem;
+    }
+
+    .pontos-avaliacoes {
+        margin-bottom: 5rem;
+    }
+
+    .numero-nota {
+        font-size: 3rem;
+    }
+
+    .estrelas-google {
+        font-size: 1.8rem;
+    }
+
+    .botao-google {
+        max-width: 100%;
+    }
+}
+
+/* ==============================
+   SEÇÃO DE LOCALIZAÇÃO
+============================== */
+
+.localizacao {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 6rem 5%;
+    background-color: whitesmoke;
+    color: #111;
+}
+
+.localizacao * {
+    box-sizing: border-box;
+}
+
+.titulo-localizacao {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.subtitulo-localizacao {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+}
+
+.titulo-localizacao .title {
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #111;
+    text-transform: none;
+}
+
+.descricao-localizacao {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.localizacao-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    align-items: stretch;
+    gap: 4rem;
+}
+
+/* MAPA */
+
+.mapa-localizacao {
+    width: 100%;
+    min-width: 0;
+    min-height: 430px;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #e5e5e5;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.mapa-localizacao iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    border: 0;
+}
+
+/* INFORMAÇÕES DO ENDEREÇO */
+
+.informacoes-localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+.icone-localizacao {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    color: #111;
+    font-size: 2rem;
+}
+
+.informacoes-localizacao h3 {
+    margin-bottom: 1.5rem;
+    font-family: "Lora", serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #111;
+    text-transform: none;
+}
+
+.informacoes-localizacao .endereco {
+    margin-bottom: 2.5rem;
+    font-family: "Lora", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #333;
+}
+
+.informacoes-localizacao .endereco strong {
+    font-weight: 700;
+}
+
+.detalhes-localizacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.detalhe-localizacao {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.detalhe-localizacao i {
+    width: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #111;
+}
+
+/* BOTÕES */
+
+.botoes-localizacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.botoes-localizacao .btn {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.4rem 1.8rem;
+    border: 1px solid #111;
+    border-radius: 0.4rem;
+    font-family: "Lora", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botoes-localizacao .btn-mapa {
+    background-color: #111;
+    color: #fff;
+}
+
+.botoes-localizacao .btn-waze {
+    background-color: transparent;
+    color: #111;
+}
+
+.botoes-localizacao .btn-mapa:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.botoes-localizacao .btn-waze:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.botoes-localizacao .btn i {
+    font-size: 1.6rem;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .localizacao {
+        padding: 5rem 4%;
+    }
+
+    .localizacao-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+        gap: 2.5rem;
+    }
+
+    .mapa-localizacao,
+    .mapa-localizacao iframe {
+        min-height: 400px;
+    }
+
+    .informacoes-localizacao h3 {
+        font-size: 2.4rem;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+    .localizacao {
+        padding: 4rem 2rem;
+    }
+
+    .titulo-localizacao {
+        margin-bottom: 2.5rem;
+    }
+
+    .titulo-localizacao .title {
+        font-size: 3.2rem;
+    }
+
+    .descricao-localizacao {
+        font-size: 1.5rem;
+    }
+
+    .localizacao-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mapa-localizacao,
+    .mapa-localizacao iframe {
+        min-height: 320px;
+    }
+
+    .informacoes-localizacao {
+        padding: 1rem 0;
+    }
+
+    .informacoes-localizacao h3 {
+        font-size: 2.5rem;
+    }
+
+    .botoes-localizacao .btn {
+        min-height: 5rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* ==============================
+   RODAPÉ DO STUDIO
+============================== */
+
+.rodape {
+    width: 100%;
+    max-width: none;
+    padding: 5rem 5% 0;
+    background-color: #111;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.rodape * {
+    box-sizing: border-box;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+.rodape-marca h2 {
+    margin-bottom: 1rem;
+    font-family: "Lora", serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    text-transform: none;
+}
+
+.rodape-marca p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.rodape-contato,
+.rodape-navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.rodape-contato h3,
+.rodape-navegacao h3 {
+    margin-bottom: 0.5rem;
+    font-family: "Lora", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: none;
+}
+
+.rodape-contato a,
+.rodape-navegacao a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.rodape-contato a i {
+    width: 1.8rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.rodape-contato a:hover,
+.rodape-navegacao a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.rodape-final {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-top: 1px solid #444;
+    text-align: center;
+}
+
+.rodape-final p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #aaa;
+}
+
+/* RODAPÉ NO CELULAR */
+
+@media (max-width: 700px) {
+    .rodape {
+        padding: 4rem 2rem 0;
+    }
+
+    .rodape-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .rodape-marca h2 {
+        font-size: 2.5rem;
+    }
+
+    .rodape-contato,
+    .rodape-navegacao {
+        gap: 1.3rem;
+    }
+
+    .rodape-final p {
+        font-size: 1.1rem;
+    }
+}
+
+/* ==============================
+   BOTÃO FLUTUANTE WHATSAPP
+============================== */
+
+.whatsapp-flutuante {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    z-index: 9999;
+
+    width: 6rem;
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #25D366;
+    color: #fff;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.22);
+
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-flutuante i {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.28);
+}
+
+/* AJUSTE PARA CELULARES */
+
+@media (max-width: 700px) {
+    .whatsapp-flutuante {
+        width: 5.5rem;
+        height: 5.5rem;
+        right: 1.6rem;
+        bottom: 1.6rem;
+    }
+
+    .whatsapp-flutuante i {
+        font-size: 3rem;
+    }
+}
+
+/* =========================================
+   EXPERIÊNCIA VISUAL E ANIMAÇÕES
+   Studio Number One
+========================================= */
+
+/* Rolagem suave entre as seções */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+/* Transições suaves para os elementos interativos */
+a,
+button,
+.servicos .box,
+.cartao-avaliacao,
+.about .container-image img,
+.whatsapp-flutuante {
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.4s ease,
+        border-color 0.3s ease,
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Entrada delicada ao rolar a página */
+.animar-entrada {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+    transition-delay: var(--atraso, 0ms);
+
+    will-change: opacity, transform;
+}
+
+.animar-entrada.visivel {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+/* Imagem da seção Sobre Nós */
+.about .container-image {
+    flex: 1 1 40rem;
+    max-width: 45rem;
+    overflow: hidden;
+}
+
+.about .container-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about .container-image img:hover {
+    transform: scale(1.025);
+}
+
+/* Cartões de serviços */
+.servicos .box {
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.servicos .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.09);
+}
+
+/* Imagens dos serviços */
+.servicos .box img {
+    transition:
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.servicos .box:hover img {
+    transform: scale(1.035);
+}
+
+/* Cartões das avaliações */
+.cartao-avaliacao {
+    transition:
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.cartao-avaliacao:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-color: #c8c8c8;
+}
+
+/* Botões */
+.btn,
+.botoes-localizacao .btn {
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.botoes-localizacao .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Menu de navegação */
+.navbar a {
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-flutuante {
+    opacity: 1;
+}
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.07);
+}
+
+/* Respeita a preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .animar-entrada {
+        opacity: 1;
+        transform: none;
+        transition: none;
+        will-change: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* MENU ADAPTADO PARA CELULARES */
+@media (max-width: 768px) {
+
+    .header {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .header section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 1rem 1.2rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* Logo permanece no canto esquerdo */
+    .header .logo {
+        position: static;
+        flex-shrink: 0;
+    }
+
+    .header .logo img {
+        width: 65px;
+        height: auto;
+    }
+
+    /* Barra horizontal de navegação */
+    .header .navbar {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        padding: 0.5rem 0 1rem;
+        margin: 0;
+
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: #888 transparent;
+    }
+
+    .header .navbar a {
+        flex-shrink: 0;
+        font-size: 1.5rem;
+        padding: 0.3rem 0;
+    }
+
+    .header .navbar a:hover {
+        transform: none;
+    }
+
+    .header .navbar a::after {
+        display: none;
+    }
+}
+
+/* SOBRE NÓS — SOMENTE CELULARES */
+@media (max-width: 768px) {
+
+    .about .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about .row .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .about .row .image img {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .about .row .content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .about .row .content h3 {
+        font-size: 2.4rem;
+        line-height: 1.35;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        text-align: left;
+        margin: 0;
+    }
+}
+/* Oculto no computador */
+.btn-ver-servicos {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Visível apenas em telas pequenas */
+    .servicos .btn-ver-servicos {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+
+    /* Esconde os serviços a partir do quarto card */
+    .servicos .box-container > .box:nth-child(n+4) {
+        display: none;
+    }
+
+    /* Mostra todos quando clicar no botão */
+    .servicos.servicos-expandido .box-container > .box {
+        display: flex;
+    }
+
+}
+
+

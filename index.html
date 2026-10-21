@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Studio Number One</title>
+    <link rel="icon" type="image/png" href="./imagens/logos.png">
+</head>
+<body>
+    <header class="header">
+        <section>
+        <a href="#" class="logo">
+            <img src="./imagens/logos.png" alt="Logotipo" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#profissionais">Profissionais</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#localizacao">Endereço</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        </section>
+    </header>
+    <!--Pagina Principal-->
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3>Você em primeiro lugar</h3>
+                <p>Descubra uma nova forma de cuidar de você, com beleza, sofisticação e experiências feitas para realçar a sua essência.</p>
+                <a href="#profissionais" class="btn">Conheça nossas profissionais</a>
+            </div>
+        </section>
+    </div>
+    <section class="about" id="about">
+        <h2 class="title">Sobre nós</h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="./imagens/Cópia de _N0A9003-Editar-Editar.jpg" alt="sobre-nos">
+            </div>
+            <div class="content">
+                <h3>O que torna o Studio Number One especial?</h3>
+                <p>Nosso diferencial está na forma como cuidamos de cada cliente. Somos um espaço que reúne beleza, estética e bem-estar em um ambiente familiar, aconchegante e pensado para você. Mais do que oferecer serviços, queremos proporcionar experiências, fortalecer sua autoestima e fazer de cada visita um momento único.</p>
+                <a href="#" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <!--Serviços-->
+    <section class="servicos" id="servicos">
+        <h2 class="title">Nossos Serviços</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="./imagens/escova.png" alt="escova">
+                <h3>Escova</h3>
+                <a>a partir de</a>
+                <div class="preco">R$80,00</div>
+                <a href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20escova." class="btn">Eu quero agendar</a>
+            </div>
+            <div class="box">
+                <img src="./imagens/manicure.png" alt="manicure">
+                <h3>Mancure</h3>
+                <div class="preco">R$40,00</div>
+                <a href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20manicure." class="btn">Eu quero agendar</a>
+            </div>
+                        <div class="box">
+                <img src="./imagens/coloracao.png" alt="coloracao">
+                <h3>Coloração</h3>
+                <a>a partir de</a>
+                <div class="preco">R$185,00</div>
+                <a href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20coloracao." class="btn">Eu quero agendar</a>
+            </div>
+            <div class="box">
+                <img src="./imagens/pedicure.png" alt="pedicure">
+                <h3>Pedicure</h3>
+                <div class="preco">R$45,00</div>
+                <a href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20pedicure." class="btn">Eu quero agendar</a>
+            </div>
+            <div class="box">
+                <img src="./imagens/escovahidratacao.png" alt="escovahidratacao">
+                <h3>Escova + Hidratação</h3>
+                <a>a partir de</a>
+                <div class="preco">R$160,00</div>
+                <a href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20Escova%20com%20Hidratacao." class="btn">Eu quero agendar</a>
+            </div>
+                        <div class="box">
+                <img src="./imagens/alongamento.png" alt="alongamento">
+                <h3>Alongamento de Unha</h3>
+                <div class="preco">R$200,00</div>
+                <a href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20Alongamento%20de%20Unha." class="btn">Eu quero agendar</a>
+            </div>
+            <button class="btn btn-ver-servicos" id="verServicos" type="button"> Ver todos os serviços </button>
+            <div class="aviso-outros-servicos">
+                    <p> Precisa de outros valores? Entre em contato com nossa equipe para consultar os valores dos demais serviços. </p>
+            </div>
+        </div>
+    </section>
+    <!--Profissionais-->
+    <section class="profissionais" id="profissionais">
+        <h2 class="title">Nossas Profissionais</h2>
+    <div class="carrossel-profissionais">
+        <button class="seta-profissional anterior" aria-label="Profissional anterior">&#10094;</button>
+        <div class="palco-profissionais">
+            <!-- Talita -->
+            <article class="card-profissional">
+                <img src="./imagens/talita.png" alt="talita" class="foto-profissional">
+                <h3>Talita</h3>
+                <span class="especialidade">Cabeleireira e Fundadora do Studio Number One</span>
+                <p>À frente do Studio Number One, Talita é uma profissional completa, com mais de 20 anos de experiência na área da beleza. Com conhecimento, técnica e paixão pelo que faz, dedica-se a transformar cabelos, valorizar a beleza e proporcionar experiências especiais para cada cliente, sempre com carinho, excelência e atenção aos detalhes.</p> 
+                <a class="btn" href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20com%20a%20Talita." target="_blank" rel="noopener noreferrer">Agendar com Talita</a>
+            </article>
+            <!-- Giovanna -->
+            <article class="card-profissional">
+                <img src="./imagens/giovanna.png" alt="giovanna" class="foto-profissional">
+                <h3>Giovanna</h3>
+                <span class="especialidade">Cabeleireira</span>
+                <p>Com anos de experiência na área da beleza, Giovanna se destaca pelo seu talento, dedicação e cuidado em cada atendimento. Apaixonada por transformar cabelos e realçar a beleza de cada cliente, ela busca oferecer resultados que valorizam a personalidade e a autoestima de cada mulher.</p>
+                <a class="btn" href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Quero%20agendar%20com%20a%20Giovanna." target="_blank" rel="noopener noreferrer">Agendar horário</a>
+            </article>
+            <!-- Bianca -->
+            <article class="card-profissional">
+                <img src="./imagens/bianca.png" alt="bianca" class="foto-profissional">
+                <h3>Bianca</h3>
+                <span class="especialidade">Lash Designer</span>
+                <p>Bianca é apaixonada por realçar a beleza feminina e destacar a expressão de cada olhar. Especialista em cílios e sobrancelhas, também oferece procedimentos como micropigmentação labial e outros cuidados estéticos. Seu trabalho une delicadeza, técnica e atenção aos detalhes para valorizar a beleza natural de cada cliente.</p>
+                <a class="btn" href="https://wa.me/5511947596317?text=Ol%C3%A1%2C%20Bianca!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20voc%C3%AA.%20Vim%20pelo%20site%20do%20Studio%20Number%20One." target="_blank" rel="noopener noreferrer">Agendar horário</a>
+            </article>
+            <!-- Glaucia -->
+            <article class="card-profissional">
+                <img src="./imagens/glaucia.PNG" alt="glaucia" class="foto-profissional">
+                <h3>Glaucia</h3>
+                <span class="especialidade">Manicure e Nail Designer</span>
+                <p>Glaucia é especialista em cuidados com as mãos e os pés, oferecendo serviços como manicure, pedicure, spa dos pés e alongamento de unhas. Com dedicação, capricho e atenção aos detalhes, proporciona momentos de cuidado e bem-estar, valorizando a beleza e a autoestima de cada cliente.</p>
+                <a class="btn" href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20com%20a%20Glaucia." target="_blank" rel="noopener noreferrer">Agendar horário</a>
+            </article>
+            <!-- Thamires -->
+            <article class="card-profissional">
+                <img src="./imagens/thamires.png" alt="thamires" class="foto-profissional">
+                <h3>Thamires</h3>
+                <span class="especialidade">Esteticista</span>
+                <p>Thamires é nossa especialista em estética corporal, dedicada a promover bem-estar, cuidado e valorização da autoestima. Com serviços como drenagem linfática, massagens e tratamentos voltados à modelagem corporal, ela oferece um atendimento atencioso e personalizado, respeitando os objetivos e as necessidades de cada cliente.</p>
+                <a class="btn" href="https://wa.me/5511960714634?text=Ol%C3%A1%2C%20Thamires!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20voc%C3%AA.%20Vim%20pelo%20site%20do%20Studio%20Number%20One." target="_blank" rel="noopener noreferrer">Agendar horário</a>
+            </article>
+        </div>
+        <button class="seta-profissional proxima" aria-label="Próxima profissional">&#10095;</button>
+    </div>
+    <div class="indicadores-profissionais"
+         aria-label="Selecionar profissional">
+    </div>
+</section>
+<!--Avaliações-->
+<section class="avaliacoes" id="avaliacoes">
+    <div class="avaliacoes-container">
+        <div class="cabecalho-avaliacoes">
+            <h2>Avaliações dos nossos clientes</h2>
+        </div>
+
+    <div class="carrossel-avaliacoes">
+        <button class="seta-avaliacao anterior-avaliacao" aria-label="Avaliações anteriores">&#8249;</button>
+        <div class="janela-avaliacoes">
+        <div class="lista-avaliacoes">
+            <article class="cartao-avaliacao">
+                        <div class="topo-avaliacao">
+                            <div class="avatar-avaliacao">M</div>
+                            <div class="dados-avaliacao">
+                                <h3>Maria Bernadete Hensler</h3>
+                                <span>Avaliação no Google</span>
+                            </div>
+                            <span class="google-g">G</span>
+                        </div>
+
+                        <div class="estrelas-avaliacao">★★★★★</div>
+
+                        <p>
+                            “Atendimento nota 10, fizemos unha, cabelo e maquiagem
+                            e ficou tudo perfeito. A Talita acompanhou a debutante
+                            Ana Flávia nas trocas de cabelo, maquiagem e roupa,
+                            deixando ela uma perfeita princesa.”
+                        </p>
+                    </article>
+
+                    <article class="cartao-avaliacao">
+                        <div class="topo-avaliacao">
+                            <div class="avatar-avaliacao">D</div>
+                            <div class="dados-avaliacao">
+                                <h3>Daiana Silva</h3>
+                                <span>Avaliação no Google</span>
+                            </div>
+                            <span class="google-g">G</span>
+                        </div>
+
+                        <div class="estrelas-avaliacao">★★★★★</div>
+
+                        <p>
+                            “Há mais de 7 anos confiando minhas luzes às mãos
+                            de uma verdadeira artista! Sua dedicação, talento
+                            e cuidado fazem toda a diferença em cada detalhe.
+                            Não é só cabelo, é autoestima, carinho e amor pelo que faz.”
+                        </p>
+                    </article>
+
+                    <article class="cartao-avaliacao">
+                        <div class="topo-avaliacao">
+                            <div class="avatar-avaliacao">A</div>
+                            <div class="dados-avaliacao">
+                                <h3>Adriana Luiza</h3>
+                                <span>Avaliação no Google</span>
+                            </div>
+                            <span class="google-g">G</span>
+                        </div>
+
+                        <div class="estrelas-avaliacao">★★★★★</div>
+
+                        <p>
+                            “Eu amo tudo! O atendimento é perfeito desde o
+                            agendamento. A entrega dos serviços impecável.
+                            Faço cabelos e unhas. O SPA dos pés é o melhor de
+                            Guarulhos. A Talita e sua equipe são as fadas da beleza.”
+                        </p>
+                    </article>
+
+                    <article class="cartao-avaliacao">
+                        <div class="topo-avaliacao">
+                            <div class="avatar-avaliacao">R</div>
+                            <div class="dados-avaliacao">
+                                <h3>Rebeca Andrade</h3>
+                                <span>Avaliação no Google</span>
+                            </div>
+                            <span class="google-g">G</span>
+                        </div>
+
+                        <div class="estrelas-avaliacao">★★★★★</div>
+
+                        <p>
+                            “Atendimento 100%. São muito simpáticas e atenciosas,
+                            além do serviço que foi executado com destreza e
+                            profissionalismo. Impecável, voltarei mais vezes!!”
+                        </p>
+                    </article>
+
+                    <article class="cartao-avaliacao">
+                        <div class="topo-avaliacao">
+                            <div class="avatar-avaliacao">T</div>
+                            <div class="dados-avaliacao">
+                                <h3>Tatiana Tonini</h3>
+                                <span>Avaliação no Google</span>
+                            </div>
+                            <span class="google-g">G</span>
+                        </div>
+
+                        <div class="estrelas-avaliacao">★★★★★</div>
+
+                        <p>
+                            “Ótimo atendimento. Ambiente aconchegante,
+                            fiz minhas unhas e amei, ficou perfeita.
+                            Parabéns pelo trabalho que vocês realizam.”
+                        </p>
+                    </article>
+
+                    <article class="cartao-avaliacao">
+                        <div class="topo-avaliacao">
+                            <div class="avatar-avaliacao">G</div>
+                            <div class="dados-avaliacao">
+                                <h3>Grace Cintra</h3>
+                                <span>Avaliação no Google</span>
+                            </div>
+                            <span class="google-g">G</span>
+                        </div>
+
+                        <div class="estrelas-avaliacao">★★★★★</div>
+
+                        <p>
+                            “Melhor salão de beleza! Da entrada até a saída
+                            você recebe todo carinho, atenção e os melhores
+                            cuidados. Salão nota mil. Muitíssimo obrigada a todos.”
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+
+            <button class="seta-avaliacao proxima-avaliacao"
+                aria-label="Próximas avaliações">
+                &#8250;
+            </button>
+
+        </div>
+
+        <div class="pontos-avaliacoes">
+            <button class="ponto-avaliacao ativo"
+                aria-label="Primeira página de avaliações"></button>
+            <button class="ponto-avaliacao"
+                aria-label="Segunda página de avaliações"></button>
+        </div>
+
+        <div class="resumo-google">
+
+            <div class="nota-google">
+                <div class="nota-linha">
+                    <span class="numero-nota">4,9</span>
+                    <span class="estrelas-google">★★★★★</span>
+                </div>
+                <p>Total de 112 avaliações no Google</p>
+            </div>
+        </div>
+        <a
+            href="https://g.page/r/CUUNm-WEvaRQEAE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="botao-google"
+        >
+            <span class="separador-botao"></span>
+            <span>Avaliar no Google</span>
+            <span class="seta-botao">→</span>
+        </a>
+
+    </div>
+</section>
+
+<!-- SEÇÃO DE LOCALIZAÇÃO -->
+<section class="localizacao" id="localizacao">
+
+    <div class="titulo-localizacao">
+        <h2 class="title">Nosso Endereço</h2>
+        <p class="descricao-localizacao">
+            Será um prazer receber você no Studio Number One.
+        </p>
+    </div>
+
+    <div class="localizacao-container">
+
+        <!-- MAPA DO GOOGLE MAPS -->
+        <div class="mapa-localizacao">
+            <iframe
+                src="https://maps.google.com/maps?q=Rua%20Ronaldo%2C%20324%2C%20Jardim%20Santa%20Mena%2C%20Guarulhos%2C%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de localização do Studio Number One">
+            </iframe>
+        </div>
+
+        <!-- INFORMAÇÕES DO ENDEREÇO -->
+        <div class="informacoes-localizacao">
+
+            <div class="icone-localizacao">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+
+            <h3>Studio Number One</h3>
+
+            <p class="endereco">
+                <strong>Rua Ronaldo, 324</strong><br>
+                Jardim Santa Mena<br>
+                Guarulhos - SP<br>
+                CEP: 07096-080
+            </p>
+
+            <div class="detalhes-localizacao">
+
+                <div class="detalhe-localizacao">
+                    <i class="fas fa-car"></i>
+                    <span>Fácil acesso de carro</span>
+                </div>
+
+                <div class="detalhe-localizacao">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Localização pelo GPS</span>
+                </div>
+
+            </div>
+
+            <div class="botoes-localizacao">
+
+                <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Rua+Ronaldo+324%2C+Jardim+Santa+Mena%2C+Guarulhos+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-mapa">
+                    <i class="fas fa-location-arrow"></i>
+                    Como chegar pelo Google Maps
+                </a>
+
+                <a
+                    href="https://www.waze.com/ul?q=Rua%20Ronaldo%20324%2C%20Jardim%20Santa%20Mena%2C%20Guarulhos%20SP&navigate=yes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-waze">
+                    <i class="fas fa-car"></i>
+                    Abrir no Waze
+                </a>
+
+</div>
+</div>
+</div>
+</section>
+<!-- RODAPÉ -->
+<footer class="rodape" id="contato">
+    <div class="rodape-container">
+
+        <!-- IDENTIDADE DO STUDIO -->
+        <div class="rodape-marca">
+            <h2>Studio Number One</h2>
+            <p>Beleza, estética e bem-estar.</p>
+        </div>
+        <!-- CONTATOS -->
+        <div class="rodape-contato">
+            <h3>Entre em contato</h3>
+
+            <a href="tel:+551120862110">
+                <i class="fas fa-phone"></i>
+                (11) 2086-2110
+            </a>
+
+            <a
+                href="https://wa.me/551120862110"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                Fale conosco pelo WhatsApp
+            </a>
+
+            <a
+                href="https://www.instagram.com/studio.numberone/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                @studio.numberone
+            </a>
+        </div>
+
+        <!-- NAVEGAÇÃO -->
+        <div class="rodape-navegacao">
+            <h3>Navegação</h3>
+
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#profissionais">Profissionais</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#localizacao">Localização</a>
+        </div>
+
+    </div>
+    <div class="rodape-final">
+        <p>
+            © 2026 Studio Number One. Todos os direitos reservados.
+        </p>
+    </div>
+</footer>
+<!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+<a
+    href="https://wa.me/551120862110?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Studio%20Number%20One%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fale com o Studio Number One pelo WhatsApp"
+    title="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<script src="script.js"></script>
+</body>
+</html>
